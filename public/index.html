@@ -25,7 +25,7 @@
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
-
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -37,14 +37,23 @@
     <!-- Top nav bar (fixed) -->
     <nav>
       <div>
-      <span class="tweeter">TWEETER</span>
+        <span class="tweeter">TWEETER</span>
       </div>
-      <span class="navRightSide">
-      <div class="newTweet"><b>Write</b> a new tweet</div>
-      <div class="fas fa-angle-double-down"></div>
-      </span>
+        <span class="navRightSide">
+          <div class="newTweet"><b>Write</b> a new tweet</div>
+          <div class="fas fa-angle-double-down"></div>
+        </span>
     
     </nav>
+    <header class="header" >
+      <div class="avatar">
+          <img src="/images/profile-hex.png"> 
+      </div>
+      <br>
+      <div class="h2">
+          <h2>Your Name</h2>
+      </div>
+  </header>
 
     <!-- Page-specific (main) content here -->
     <main class="container"></main>
