@@ -11,7 +11,8 @@
   font-family: 'Source Sans Pro', sans-serif;
   border: none;
   background-color: #f4f1ec;
-  
+  resize: none;
+  outline: none;
 }
 
 .tweet-footer{
@@ -20,3 +21,20 @@
   justify-content:space-between;
   border-top: 3px grey solid;
 }
+
+.counter{
+  font-family: "bungee", sans-serif;
+} 
+
+.submitForm{
+  display: flex;
+  flex-direction:column;
+}
+
+
+.extraChrt{
+  font-family: 'Bungee';
+  color:red
+}
+
+
