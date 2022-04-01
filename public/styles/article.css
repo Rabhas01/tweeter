@@ -15,11 +15,20 @@ article.tweet header {
   justify-content: space-between;
   font-family: 'Source Sans pros' , sans-serif;
   color: gray;
+  padding-top: 10px;
+}
+
+article.tweet header img{
+  padding-right: 10px;
+  
 }
 
 article.tweet header .name{
   width: 95% ;
   margin: auto;
+  display: flex;
+  align-items: center;
+  
 }
 
 article.tweet header .tag{
