@@ -25,6 +25,17 @@ const data = [
 
 $(document).ready(function () {
 
+  $( ".submitForm" ).submit(function( event ) {
+    alert( "Handler for .submit() called." );
+    let query = $( this ).serialize();
+    event.preventDefault();
+    $.ajax({
+      method: "POST",
+      url: "/tweets/",
+      data: query 
+    })
+  });
+
 const createTweetElement = function(tweetData) {
   const time = timeago.format(tweetData.created_at)
   const tweet = $(`
