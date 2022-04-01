@@ -20,6 +20,7 @@
   display: flex;
   justify-content:space-between;
   border-top: 3px grey solid;
+  padding-top: 10px;
 }
 
 .counter{
