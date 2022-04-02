@@ -50,22 +50,30 @@ $(document).ready(function () {
 }
 });
 
- 
+// escapes the input text to avoid cross-site scripting attacks -> used in createTweetElement
+const escape = function (str) {
+  //creates a new element to append the text to
+  let div = document.createElement("div");
+  // appends the text to the element using createTextNode to escape unsafe characters
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
+
 const createTweetElement = function(tweetData) {
   const time = timeago.format(tweetData.created_at)
   const tweet = $(`
   <article class="tweet">
-    <header> 
+     <header> 
       <span class="name"> 
-      <img src='${tweetData.user.avatars}'>
-        ${tweetData.user.name}
+      <img src='${escape(tweetData.user.avatars)}'>
+        ${escape(tweetData.user.name)}
       </span>
-      <p class="tag">${tweetData.user.handle}</p>
+      <p class="tag">${escape(tweetData.user.handle)}</p>
     </header>
-    <p class="text">${tweetData.content.text}</p>
+    <p class="text">${escape(tweetData.content.text)}</p>
     <footer> 
       <span class="days-ago">
-        ${time}
+        ${escape(time)}
       </span>
       <span class="icon">
         <i class="fa-solid fa-flag"></i>
