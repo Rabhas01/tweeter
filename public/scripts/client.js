@@ -24,16 +24,19 @@
 // ]
 
 $(document).ready(function () {
+  //hidden error messages
+  $('#empty').hide();
+  $('#exceed').hide();
 
-  $( ".submitForm" ).submit(function( event ) {
+    $( ".submitForm" ).submit(function( event ) {
     let query = $( this ).serialize();
     let tweetLength = $('#tweet-text').val().length
     if (tweetLength === 0) {
       event.preventDefault()
-      alert("uh oh, an error was encountered.\nCannot post an empty tweet\nPlease say something to post.")
+      $('#empty').slideDown(500);
     } else if (tweetLength > 140) {
       event.preventDefault()
-      alert("Oops!\nYou have exceeded the 140 character limit\nPlease shorten your tweet");
+      $('#exceed').slideDown(500);
     } else {
    
     event.preventDefault();
