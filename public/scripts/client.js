@@ -27,26 +27,30 @@ $(document).ready(function () {
 
   $( ".submitForm" ).submit(function( event ) {
     let query = $( this ).serialize();
+    let tweetLength = $('#tweet-text').val().length
+    if (tweetLength === 0) {
+      event.preventDefault()
+      alert("uh oh, an error was encountered.\nCannot post an empty tweet\nPlease say something to post.")
+    } else if (tweetLength > 140) {
+      event.preventDefault()
+      alert("Oops!\nYou have exceeded the 140 character limit\nPlease shorten your tweet");
+    } else {
+   
     event.preventDefault();
     $.ajax({
       method: "POST",
       url: "/tweets/",
       data: query 
-    })
-  });
-
-  const loadtweets = function () {
-    $.ajax({
-      method: "GET",
-      url: "/tweets/",
-      dataType: 'JSON'
-    }).then(function( data ) {
-      renderTweets(data)
+    }).then(function(response) {
+      // console.log(response)
+      $('#tweet-text').val('');
+      $('.tweet-container').empty();
+      loadTweets(response);
     });
-  }
+}
+});
 
-loadtweets()
-
+ 
 const createTweetElement = function(tweetData) {
   const time = timeago.format(tweetData.created_at)
   const tweet = $(`
@@ -85,4 +89,17 @@ const renderTweets = function(tweets) {
 
 // renderTweets(data);
 
+const loadTweets = function () {
+  $.ajax({
+    method: "GET",
+    url: "/tweets/",
+    dataType: 'JSON'
+  }).then(function(data) {
+    renderTweets(data)
+  });
+}
+
+loadTweets()
+
 });
+
