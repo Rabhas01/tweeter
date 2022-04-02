@@ -33,9 +33,11 @@ $(document).ready(function () {
     let tweetLength = $('#tweet-text').val().length
     if (tweetLength === 0) {
       event.preventDefault()
+      $('#exceed').hide();
       $('#empty').slideDown(500);
     } else if (tweetLength > 140) {
       event.preventDefault()
+      $('#empty').hide();
       $('#exceed').slideDown(500);
     } else {
    
