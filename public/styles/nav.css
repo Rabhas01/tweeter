@@ -1,3 +1,4 @@
+
 nav {
   display: flex;
   height: 120px;
@@ -6,10 +7,11 @@ nav {
   color: #FFFFFF;
   padding: 1.5em;  
   justify-content:space-between;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
- }
-
+  position: fixed;                   /*Set the navbar to fixed position */  
+  top: 0;                            /*Position the navbar at the top of the page */
+  
+}
+ 
 .tweeter {
   font-family: "Bungee" , sans-serif;
  }
@@ -22,6 +24,8 @@ nav {
 
 .navRightSide .fa-angle-double-down {
   color: red;
-  font-size: 0.9em;
+  font-size: 0.9em; */
 
 }
+
+

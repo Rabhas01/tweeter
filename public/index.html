@@ -41,7 +41,9 @@
 
   <body>
     <!-- Top nav bar (fixed) -->
+    
     <nav>
+      
       <div>
         <span class="tweeter">TWEETER</span>
       </div>
@@ -49,22 +51,22 @@
           <div class="newTweet"><b>Write</b> a new tweet</div>
           <div class="fas fa-angle-double-down"></div>
         </span>
-    
+      
     </nav>
+  
     <header class="header" >
       <div class="avatar">
           <img src="/images/profile-hex.png"> 
       </div>
-      <br>
       <div class="h2">
-          <h2>Your Name</h2>
+        <p><b>Amy</b> Mansell </p>
       </div>
   </header>
 
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <h2>Compose Tweet</h2>
+        <!-- <h2>Compose Tweet</h2> -->
         <form method="POST" action="/tweets/" class="submitForm">
           <textarea placeholder="What are you humming about?" name="text" id="tweet-text" ></textarea>
           <div class="tweet-footer"> 
