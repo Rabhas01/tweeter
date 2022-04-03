@@ -6,7 +6,7 @@ This repository is the starter code for the project: Students will fork and clon
 
 # How it looks
 
-![""]()
+!["Application behavior"](https://github.com/Rabhas01/tweeter/blob/master/docs/Tweeter.gif?raw=true)
 
 ## Getting Started
 
