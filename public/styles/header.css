@@ -1,21 +1,23 @@
-.avatar{
-height: 300px;
-width: 100%;
-display: flex;
-justify-content: center;
+.avatar {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
-.header{
+
+.header {
   background-color: orange;
   background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
   justify-content:center;
 }
+
 .h2{
   display: flex;
   justify-content: center;
   color: white;
-  font-size: 1.5em
-}
-header .avatar img{
-  padding: 25px 25px 0px 25px;
+  font-size: 1.5em;
 }
 
+header .avatar img {
+  padding: 25px 25px 0px 25px;
+}

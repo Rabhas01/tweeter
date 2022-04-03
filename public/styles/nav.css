@@ -1,4 +1,3 @@
-
 nav {
   display: flex;
   height: 120px;
@@ -14,18 +13,16 @@ nav {
  
 .tweeter {
   font-family: "Bungee" , sans-serif;
- }
-
+}
 
 .navRightSide {
   text-align: center;
-} 
-
+  
+}
 
 .navRightSide .fa-angle-double-down {
   color: red;
-  font-size: 0.9em; */
-
+  font-size: 0.9em;
+  background-color: #4056A1;
+  border: none;
 }
-
-

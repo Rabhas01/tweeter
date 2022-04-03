@@ -10,28 +10,26 @@ article.tweet:hover {
 
 article.tweet header {
   display: flex;
-  width: 95% ;
+  width: 95%;
   margin: auto;
   justify-content: space-between;
-  font-family: 'Source Sans pros' , sans-serif;
+  font-family: 'Source Sans pros', sans-serif;
   color: gray;
   padding-top: 10px;
 }
 
-article.tweet header img{
+article.tweet header img {
   padding-right: 10px;
-  
 }
 
-article.tweet header .name{
-  width: 95% ;
+article.tweet header .name {
+  width: 95%;
   margin: auto;
   display: flex;
   align-items: center;
-  
 }
 
-article.tweet header .tag{
+article.tweet header .tag {
   color: #b5bcc2;
   display: flex;
   justify-content: space-between;
@@ -42,7 +40,7 @@ article.tweet footer {
   width: 95% ;
   margin: auto;
   justify-content: space-between;
-  font-family: 'Source Sans pros' , sans-serif;
+  font-family: 'Source Sans pros', sans-serif;
   border-top: 3px grey solid;
   margin-top: 30px;
   margin-bottom: 15px;
@@ -51,18 +49,18 @@ article.tweet footer {
 
 article.tweet .text {
   display: flex;
-  width: 95% ;
+  width: 95%;
   margin: auto;
   justify-content: space-between;
-  font-family: 'Source Sans pros' , sans-serif;
+  font-family: 'Source Sans pros', sans-serif;
 }
 
-article.tweet footer .icon{
+article.tweet footer .icon {
   color: #4056A1;
   font-size: 15px; 
 }
 
-article.tweet footer .days-ago{
+article.tweet footer .days-ago {
   font-size: 15px;
 }
 
