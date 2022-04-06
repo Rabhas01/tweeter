@@ -53,6 +53,7 @@ article.tweet .text {
   margin: auto;
   justify-content: space-between;
   font-family: 'Source Sans pros', sans-serif;
+  overflow-wrap:break-word;
 }
 
 article.tweet footer .icon {
