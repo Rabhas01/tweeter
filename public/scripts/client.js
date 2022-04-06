@@ -26,6 +26,7 @@ $(document).ready(function() {
         $('.counter').val(140);
         $('.tweet-container').empty();
         loadTweets(response);
+        location.reload()
       });
     }
   });
