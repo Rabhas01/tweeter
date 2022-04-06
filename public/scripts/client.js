@@ -22,7 +22,6 @@ $(document).ready(function() {
         url: "/tweets/",
         data: query
       }).then(function(response) {
-      // console.log(response)
         $('#tweet-text').val('');
         $('.counter').val(140);
         $('.tweet-container').empty();
